@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {Sun,Moon} from "lucide-react";
-import { set } from "mongoose";
+
 import { cn } from "@/lib/utils";
 
 export const ThemeToggle = () => {
