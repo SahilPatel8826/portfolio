@@ -2,7 +2,7 @@ import { Briefcase,User,Code } from "lucide-react"
 
 export const AboutMe = () => {
     return (
-        <section id="about-me" className="relative py-24 px-4">
+        <section id="about" className="relative py-24 px-4">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     About <span className="text-primary">Me</span>
@@ -51,9 +51,13 @@ export const AboutMe = () => {
                             <User className="h-6 w-6 text-primary"/>
                             </div>
                               <div className="text-left">
-                                <h4 className="font-semibold text-lg">Full-Stack Development</h4>
+                                <h4 className="font-semibold text-lg">  ⚡ Golang Development</h4>
                                 <p className="text-muted-foreground text-sm">
-                                    Experienced in building responsive web applications using React, Node.js, Express, and MongoDB with a focus on clean code and user experience.
+                                   Building high-performance, concurrent microservices, REST APIs, and
+                                   scalable backend systems using Go.
+ 
+                                    
+                                    
                                 </p>
 
                             </div>
@@ -66,9 +70,9 @@ export const AboutMe = () => {
                             <Briefcase className="h-6 w-6 text-primary"/>
                             </div>
                               <div className="text-left">
-                                <h4 className="font-semibold text-lg">Full-Stack Development</h4>
+                                <h4 className="font-semibold text-lg">Data Structures & Algorithms</h4>
                                 <p className="text-muted-foreground text-sm">
-                                    Experienced in building responsive web applications using React, Node.js, Express, and MongoDB with a focus on clean code and user experience.
+                                    Consistent LeetCode practice has sharpened my problem-solving and algorithmic thinking. I prioritize optimal solutions with clean, maintainable code.
                                 </p>
 
                             </div>

@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Contact, Star } from "lucide-react";
 import { ThemeToggle } from "../component/ThemeToggle";
 import { StarBackground } from "../component/StarBackground";
 import { Navbar } from "../component/Navbar";
@@ -6,9 +6,11 @@ import { HeroSection } from "../component/HeroSection";
 import { AboutMe } from "../component/AboutMe";
 import { Skills } from "../component/Skills";
 import { ProjectsSection } from "../component/ProjectsSection";
+import { ContactSection } from "../component/ContactSection";
+import { Footer } from "../component/Footer";
 export const Home = () => {
   return (
-    <div className="home-container">
+    <div id="home" className="home-container">
 
         {/*Theme Toggle Button*/}
       <ThemeToggle/>
@@ -25,10 +27,12 @@ export const Home = () => {
               <AboutMe/>
               <Skills/>
               <ProjectsSection/>
+              <ContactSection/>
         </main>
  
 
         {/* Footer */}
+        <Footer/>
 
     </div>
   )

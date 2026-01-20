@@ -1,32 +1,36 @@
-import { ExternalLink } from "lucide-react"
+import { ExternalLink ,Github,ArrowRight} from "lucide-react"
+
+import projectImg from "@/assets/Project2.png";
+import projectImg3 from "@/assets/Project.png"
+import projectImg2 from "@/assets/Project3.png"
 
 const projects = [
     {
         id:1,
-        title:"Project One",
-        description:"This is the first project",
-        image:"/images/project1.png",
+        title:"Cropozone",
+        description:"Built a full-stack marketplace with real-time cart management, secure payments, and scalable backend APIs.",
+        image:projectImg3,
         tag:["React","Nodejs"],
         demoUrl:"#",
-        githubUrl:"#",
+        githubUrl:"https://github.com/SahilPatel8826/Cropozone",
     },
        {
-        id:1,
-        title:"Project One",
-        description:"This is the first project",
-        image:"/images/project1.png",
-        tag:["React","Nodejs"],
+        id:2,
+        title:"File-Based Database System",
+        description:"Implemented a lightweight storage engine with indexing, querying, and persistence from scratch",
+        image:projectImg,
+        tag:["Golang"],
         demoUrl:"#",
-        githubUrl:"#",
+        githubUrl:"https://github.com/SahilPatel8826/golang/tree/main/Database",
     },
        {
-        id:1,
-        title:"Project One",
-        description:"This is the first project",
-        image:"/images/project1.png",
-        tag:["React","Nodejs"],
+        id:3,
+        title:"Bing Web Crawler",
+        description:"Designed a high-performance concurrent crawler that scrapes, processes, and stores search results efficiently.",
+        image:projectImg2,
+        tag:["React","Golang"],
         demoUrl:"#",
-        githubUrl:"#",
+        githubUrl:"https://github.com/SahilPatel8826/golang/tree/main/BingWebCrawler",
     },
 ]
 
@@ -50,7 +54,7 @@ export const ProjectsSection = () => {
                         <img
                          src={project.image}
                          alt={project.title}
-                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
+                         className="flex justify-center w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
                     </div>
                     <div className="p-6">
                         <div className="flex flex-wrap gap-2 mb-4">
@@ -72,14 +76,14 @@ export const ProjectsSection = () => {
                              className="text-foreground/80 hover:text-primary transition-colors duration-300"
                              
                              >
-                                <ExternalLink/>
+                                <ExternalLink size={20}/>
                             </a>
                             <a
                               
                              href={project.githubUrl}
                              className="text-foreground/80 hover:text-primary transition-colors duration-300"
                              >
-                                <Github/>
+                                <Github size={20}/>
                             </a>
                             </div>
                         </div>
@@ -88,6 +92,15 @@ export const ProjectsSection = () => {
                  </div>
             ))}    
         </div>
+        <div className="text-center mt-12">
+           <a className="cosmic-button w-fit flex items-center mx-auto gap-2" 
+           target="_blank"
+           href="https://github.com/SahilPatel8826">
+            Check My Github <ArrowRight size={16}/>
+           </a>
+        </div>
+
+
     </div>
     </section>
 }

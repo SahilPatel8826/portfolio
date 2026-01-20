@@ -1,22 +1,19 @@
-
-import { BrowserRouter, Route ,Routes} from "react-router-dom";
-import {Home} from "./pages/Home"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
 // import NotFound from "./pages/NotFound";
-
-
+import { Toaster } from "@/component/ui/toaster";
 
 function App() {
   return (
-   <div>
     <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          {/* <Route path="*" element={<NotFound/>} /> */}
-        </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
 
-
+      {/* Toaster should be OUTSIDE Routes but inside BrowserRouter */}
+      <Toaster />
     </BrowserRouter>
-   </div>
   );
 }
 
